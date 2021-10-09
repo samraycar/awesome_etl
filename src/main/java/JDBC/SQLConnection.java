@@ -10,6 +10,7 @@ public class SQLConnection {
     String user;
     String password;
     Integer port;
+    String schema;
 
 
     SQLConnection(DatabaseType databaseType, String hostname, String user, String password, Integer port) {
@@ -19,6 +20,12 @@ public class SQLConnection {
         this.password = password;
         this.port = port;
     }
+
+    public void useSchema(String schema) {
+        this.schema = schema;
+    }
+
+
 
 
 }
